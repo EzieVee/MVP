@@ -33,20 +33,22 @@
     </div>
 
 <!--  -->
-    <% for(let i = 0; i < workouts.length; i++){ %>
-      <div class="container">
+<div class="container">
+        <% for(let i = 0; i < workouts.length; i++){ %>
         <div class="row justify-content-center mt-5">
           <ul class="row list-unstyled">
-            <li class="col-6 justify-content-between mt-5">
-              <%= workouts[i].name %>      
-              <%= workouts[i].type %>      
-              <%= workouts[i].image %>      
-             <a href="<%= workouts[i].videoReference %>">Link</a>    
+            <!-- <li class="col-6 justify-content-between mt-5"> -->
+            <li class="d-flex flex-column col-6 justify-content-between">
+              <h4 id="ml-30"><%= workouts[i].name %></h4>
+              <h4 id="ml-30-sty-1"><%= workouts[i].type %></h4>
+                    
+             <img src="<%= workouts[i].image %> " alt="" width="140px" height="120px" object-fit="contain">
+             <a href="<%= workouts[i].videoReference %>">Video</a>    
              </li>
            </ul>
          </div>
+         <%}%>
        </div> 
-       <%}%>
     
  <!--  -->
 
@@ -68,6 +70,7 @@
           <option value="Barbell">Barbell</option>
           <option value="Kettle Bells">Kettle Bells</option>
           <option value="Cable">Cable</option>
+          <option value="Station">Station</option>
           </div>
         </select>
         <div class="mb-3">

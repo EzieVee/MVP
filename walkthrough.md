@@ -40,3 +40,8 @@ How to make clickable link display catalogue for each specific image without hav
           </ul>
       </div>
     </div>  
+
+
+    Media player that display when a link is clicked, and is able to play a different video if a different link is clicked.
+
+    start a new row after X amount of div's
