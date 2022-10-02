@@ -234,3 +234,7 @@ How to make clickable link display catalogue for each specific image without hav
   font-size: 1.3rem;
   padding-top: 15px;
 }
+
+
+auto scroll feed horizontal
+
