@@ -238,3 +238,6 @@ How to make clickable link display catalogue for each specific image without hav
 
 auto scroll feed horizontal
 
+when the cursor gets close to the auto scroll feed, the container enlarges while the cursor is within the distance of the container reach
+
+what are the semantics for auto scroll horizontal endless loop?
