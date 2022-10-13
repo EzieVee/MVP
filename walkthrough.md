@@ -241,3 +241,66 @@ auto scroll feed horizontal
 when the cursor gets close to the auto scroll feed, the container enlarges while the cursor is within the distance of the container reach
 
 what are the semantics for auto scroll horizontal endless loop?
+
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  box-sizing: border-box;
+  margin-top: 3rem!important;
+
+  <!-- Autoscroll slideshow -->
+
+    max-width: 100%;
+  height: auto;
+  
+
+  <div class="main-scroll-div">
+          <div>
+              <button class="icon" onmouseover="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
+              <!-- <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button> -->
+          </div>
+          <div class="cover">
+              <div class="scroll-images">
+                <% for(var i=0; i<posts.length; i++) {%>
+                  <div class="child">
+                      <a href="/post/<%= posts[i]._id%>">
+                        <img class="img-feed child-img" src="<%= posts[i].image%>">
+                      </a>
+                  </div>
+                <% } %>
+              </div>
+          </div>
+          <div>
+              <button class="icon" onmouseover="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+          </div>
+        </div>

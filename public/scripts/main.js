@@ -29,4 +29,7 @@ function scrollr(event) {
   }
 
 
-  
+  const root = document.documentElement;
+
+  const scrollElementDisplayed = getComputedStyle(root).getPropertyValue('')
+  const scrollContent = document.querySelector('.')
