@@ -304,3 +304,6 @@ what are the semantics for auto scroll horizontal endless loop?
               <button class="icon" onmouseover="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
           </div>
         </div>
+
+
+        how to make scrollable content, when added elements, don't change outside elements properties?
